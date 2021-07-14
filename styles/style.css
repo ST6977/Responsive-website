@@ -1,0 +1,88 @@
+
+ /*1st section start*/
+
+.title{
+    
+  width: 50%;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+  
+}
+h1{
+  font-weight: 700px;
+  font-size: 50px;
+}
+.live-button  {
+  background-color:magenta;
+  padding: 10px 40px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom:80px;
+  border: none;
+  color:whitesmoke;
+  
+ 
+}
+.live-button:hover{
+  background-color: black;
+}
+.banner{
+  width: 50%;
+  padding-left: 10%;
+  margin-right: 70rem;
+}
+.banner img {
+ width: 820px;
+ height: 1212px;
+ margin-top: 90px;
+animation: sliding 1s ease-in-out 0.5s 6 alternate;
+animation-play-state: running;
+position: relative;
+
+  
+
+}
+@keyframes sliding{
+
+  0%{
+    background-color:pink;
+    left: 0;
+    top: 0;
+    transform:scale(0.5);
+  }
+  100%{
+    background-color:yellow;
+    left: 400px;
+    top:0px;
+  }
+}
+.first-section{
+  display: flex;
+  background-color: mediumblue;
+
+}
+ /*2nd section start*/
+ .second-section{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   box-shadow: 10px 10px 40px wheat;
+   padding: 10rem;
+   justify-content: space-between;
+   width: 80%;
+   margin: 0 auto;
+
+
+ }
+ .player img{
+width: 100%;
+  justify-content: space-between;
+  box-shadow: 10px 10px 40px wheat;
+
+
+ }
+
+
+
