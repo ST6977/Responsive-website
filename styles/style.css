@@ -1,5 +1,12 @@
 
  /*1st section start*/
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+ body{
+ 
+     font-family: "Poppins", sans-serif;
+     font-weight: 400;
+  }
+ 
 
 .title{
     
@@ -9,6 +16,8 @@
     margin-right: 20px;
     margin-bottom: 30px;
     margin-top: 70px;
+    margin-left: 9rem;
+    color: white;
   
 }
 h1{
@@ -35,11 +44,12 @@ h1{
   margin-right: 70rem;
 }
 .banner img {
- width: 820px;
- height: 1212px;
+ width: 556px;
+ height: 438px;
+ margin-left: 4rem;
  margin-top: 90px;
-animation: sliding 1s ease-in-out 0.5s 6 alternate;
-animation-play-state: running;
+animation: sliding 1s linear 0.5s 6 alternate;
+
 position: relative;
 
   
@@ -48,41 +58,119 @@ position: relative;
 @keyframes sliding{
 
   0%{
-    background-color:pink;
+   
     left: 0;
     top: 0;
     transform:scale(0.5);
   }
   100%{
-    background-color:yellow;
-    left: 400px;
+   
+    left: 100px;
     top:0px;
   }
 }
 .first-section{
   display: flex;
+
   background-color: mediumblue;
 
 }
  /*2nd section start*/
- .second-section{
+ .container{
    display: grid;
    grid-template-columns: repeat(3,1fr);
-   box-shadow: 10px 10px 40px wheat;
+   grid-column-gap: 4rem;
+   grid-row-gap: 4rem;
+  
    padding: 10rem;
-   justify-content: space-between;
-   width: 80%;
-   margin: 0 auto;
+   justify-content: center;
+    margin-left: 5% ;
+    margin-right:5% ;
+    
+   
 
 
+ }
+ .player{
+  box-shadow: 10px 10px 40px black;
+  padding:1rem;
  }
  .player img{
-width: 100%;
+width: 300px;
+height: 256px; 
   justify-content: space-between;
-  box-shadow: 10px 10px 40px wheat;
+ 
+  
+ }
+ 
+  
+ 
 
+
+
+ /*footer section start*/
+ footer{
+   display: flex;
+   justify-content: center;
 
  }
+ .last-part{
+   width: 400px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ footer img{
+   width: 438px;
+   height: 110px;
+   justify-content: center;
+   margin-left: 50px;
+   margin-right: 50px;
+   
+ }
+ 
+ .fab-logo{
+   color: tomato;
+
+ }
+ /*mobile device*/
+ @media only screen and (max-width:688px) {
+   .title{
+     font-size: 36px;
+     margin-left: 1rem;
+  
+   }
+   .first-section{
+     flex-direction: column;
+     align-items: center;
+   }
+   .banner img{
+     margin-left: 24rem;
+     width: 500px;
+     height:auto ;
+   
+   }
+   .container{
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+   }
+ }
+   
+ 
+
+   
+
+ 
+
+ 
+ 
+  
+  
+ 
+
+
+ 
 
 
 
