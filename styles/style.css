@@ -96,11 +96,38 @@ position: relative;
   padding:1rem;
  }
  .player img{
-width: 300px;
+width: 320px;
 height: 256px; 
   justify-content: space-between;
  
   
+ }
+ /*bonus section start*/
+.cricket{
+   width: 100%;
+   margin-bottom: 3rem;
+   background-color: blueviolet;
+ }
+ .football{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  box-shadow:0 10px 15px 0 rgb(0,0,0,.2) ;
+  margin-bottom: 20px;
+  margin-top: 3rem;
+ padding-left: 8rem;
+ padding-right: 8rem;
+  width:80% ;
+  margin: 0 auto;
+ }
+ .bonus-section{
+   font-weight: 700px;
+   color: floralwhite;
+  
+ }
+ .color{
+   color: fuchsia;
  }
  
   
@@ -155,6 +182,23 @@ height: 256px;
     grid-template-columns: repeat(1,1fr);
     justify-content: center;
    }
+   .cricket{
+     justify-content:space-between;
+    
+     
+    
+   }
+   .football{
+    
+   
+    width: auto;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+     
+   }
+
  }
    
  
